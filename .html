@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="primeiro .css" rel="stylesheet" />
+    <link href="primeiro .css" rel="stylesheet" />
+    <title>Portifolio Gustavo Souza</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li><a href="" id="Home">Home</a></li>
+      </ul>
+    </div>
+    <div class="content"></div>
+    <div class="box"></div>
+    <svg viewBox="0 0 1320 300">
+      <text x="50%" text-anchor="middle">Gustavo Souza</text>
+    </svg>
+    <img src="foto portifolio.jpg" id="perfil" height="100px" width="300px" />
+    <p class="sobre">
+      Ola, me chamo Gustavo Souza, atualmente sou um estudante de Analise e
+      Desenvolvimento<br />
+      de sistemas na instituição Faculdade Descomplica, sou apaixonado pelo
+      mundo da tecnologia, <br />me sinto muito bem com este ramo de
+      conhecimento e quero aprender mais sobre ele!!
+    </p>
+    <p class="Habilidades">Habilidades principais:</p>
+    <div class="boxhtml">
+      <p>HTML</p>
+    </div>
+    <div class="boxcss">
+      <p>CSS</p>
+    </div>
+    <div class="boxjavascript">
+      <p>Javascript</p>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="Captura de tela 2025-03-24 105435.png" class="img-c" />
+        <div class="layer"></div>
+        <div class="info">
+          <p>
+            CALCULADORA <br />
+            Como muitos iniciam com ela, eu tambem fui por este caminho, a fim
+            de aprofundar meus conhecimentos em Javascript e aprender melhor
+            como funcionar os calculos.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="foto p.png" class="img-P" />
+        <div class="layer"></div>
+        <div class="info">
+          <p>
+            PORTIFOLIO <br />
+            Meu segundo projeto grande foi o portifolio, saindo de uma simples
+            calculadora para um site inteiro, utilizei algumas ajudas, como chat
+            gpt e uns videos para tirar umas ideias, mas a grande parte foi de
+            minha autoria, a correcao de bugs, o visual em si, foi tudo feito
+            por mim, com html e css.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <h1 class="texto-animado">Portifolio:</h1>
+    </div>
+
+    <script>
+      function handleScroll() {
+        const texto = document.querySelector(".texto-animado");
+        const posicao = texto.getBoundingClientRect().top;
+        const alturaTela = window.innerHeight / 1.4; // Ajuste para quando ativar
+
+        if (posicao < alturaTela) {
+          texto.classList.add("visivel");
+          texto.classList.remove("escondido");
+        } else {
+          texto.classList.add("escondido");
+          texto.classList.remove("visivel");
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll);
+    </script>
+
+    <div class="box1">
+      <p>
+        Gustavo Elias da Costa Souza <br />
+        18 Anos <br />
+        Brasileiro <br />
+      </p>
+    </div>
+    <div class="boxLi">
+      <a
+        id="Linkedin"
+        href="https://www.linkedin.com/in/gustavo-souza-b7b247311/"
+        class="icon-link"
+      >
+        <img src="icon linkedin.png" alt="icon" id="linkedin"
+      </a>
+    </div>
+
+    <div class="boxGit">
+      <a id="Git" href="https://github.com/Souza763" class="icon-link">
+        <img src="github-6980894_960_720.webp" alt="icon" id="git"
+      </a>
+    </div>
+
+    <div class="boxInsta">
+      <a
+        id="Insta"
+        href="https://www.instagram.com/gust4vo.sowza/"
+        class="icon-link"
+      >
+        <img
+        src="instagram-logo-on-circle-style-with-transparent-background-free-png.webp"
+        alt="icon" id="insta"
+      </a>
+    </div>
+  </body>
+</html>
